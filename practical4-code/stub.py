@@ -97,6 +97,7 @@ def run_games(learner, hist, iters = 100, t_len = 100):
             print (learner.last_state['tree']['top'] - learner.last_state['tree']['bot'])
             pass
         
+        https://github.com/isaacxia10/cs181_Practical4.git
         # print "out %i: %i"%(ii,learner.last_reward)
         # print swing.score
         # Save score history.
