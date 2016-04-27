@@ -4,8 +4,16 @@ import numpy.random as npr
 
 from SwingyMonkey import SwingyMonkey
 
-x = 15
-
+monkey.top.max = 600
+monkey.top.min = 50
+monkey.vel.max 
+monkey.vel.min
+tree.dist.max
+tree.dist.min
+tree.top.max
+tree.top.min
+tree.bot.max
+tree.bot.min
 
 class Learner(object):
     '''
@@ -85,7 +93,8 @@ def run_games(learner, hist, iters = 100, t_len = 100):
             # print learner.last_action
             # print swing.gravity, learner.gravity
             # print (learner.last_state['monkey']['top'] - learner.last_state['monkey']['bot']) != 56
-            print learner.last_state['tree']['dist']
+            # print learner.last_state['tree']['dist']
+            print (learner.last_state['tree']['top'] - learner.last_state['tree']['bot'])
             pass
         
         # print "out %i: %i"%(ii,learner.last_reward)
